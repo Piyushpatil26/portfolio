@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piyush Patil | CAD-CAM Portfolio</title>
+  <style>
+    /* ====== RESET ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      color: #333;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0b1c2c;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 4rem;
+    }
+    .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .logo span {
+      color: #ff9800;
+    }
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    /* ====== SECTIONS ====== */
+    .section {
+      min-height: 100vh;
+      padding: 6rem 4rem;
+    }
+
+    /* ====== HOME ====== */
+    .home {
+      background: linear-gradient(#0b1c2c, #18344c);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    .home h2 span {
+      color: #ff9800;
+    }
+    .home .btn {
+      background: #ff9800;
+      padding: 0.7rem 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 1rem;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .home .btn:hover {
+      background: #e38a00;
+    }
+
+    /* ====== ABOUT ====== */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+    .about-container div {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    /* ====== PROJECTS ====== */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .project-card {
+      background: #f0f3f7;
+      padding: 1.5rem;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ====== CONTACT ====== */
+    .contact a {
+      color: #ff9800;
+      text-decoration: none;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0b1c2c;
+      color: #fff;
+    }
+
+    /* ====== ANIMATION ====== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <!-- ====== NAVIGATION ====== -->
+  <header>
+    <nav>
+      <h1 class="logo">Piyush <span>Patil</span></h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== HOME ====== -->
+  <section id="home" class="section home fade-in">
+    <h2>Hello, I'm <span>Piyush</span></h2>
+    <h3>CAD/CAM & SolidWorks Design Engineer</h3>
+    <p>Innovative mechanical engineering student passionate about product design, simulation, and manufacturing technology.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="section about fade-in">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div>
+        <h3>Education</h3>
+        <p>3rd Year Mechanical Engineering, Skilled in CAD/CAM, SolidWorks, Fusion 360, and AutoCAD.</p>
+      </div>
+      <div>
+        <h3>Skills</h3>
+        <ul>
+          <li>SolidWorks 3D Modeling</li>
+          <li>Simulation & Analysis</li>
+          <li>CAM Toolpath Programming</li>
+          <li>Technical Drawing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects" class="section projects fade-in">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Gearbox Assembly</h3>
+        <p>Designed and assembled a gearbox model with full exploded view animation using SolidWorks.</p>
+      </div>
+      <div class="project-card">
+        <h3>Robotic Arm</h3>
+        <p>Created a robotic arm mechanism with motion analysis and stress simulation.</p>
+      </div>
+      <div class="project-card">
+        <h3>CAM Toolpath</h3>
+        <p>Generated optimized CNC toolpaths for custom part machining using CAM software.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="section contact fade-in">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:piyush26patil200@email.com">piyush26patil200@email.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/piyush-patil-310179285?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLU%2BSvnmqTkW5ap6p8R5QPQ%3D%3D">linkedin.com/in/piyush-patil</a></p>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>© 2025 Piyush Patil. All rights reserved.</p>
+  </footer>
+
+  <!-- ====== SCRIPT ====== -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Fade-in animation on scroll
+    const fadeEls = document.querySelectorAll('.fade-in');
+    function checkFade() {
+      const triggerBottom = window.innerHeight * 0.85;
+      fadeEls.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < triggerBottom) el.classList.add('show');
+      });
+    }
+    window.addEventListener('scroll', checkFade);
+    window.addEventListener('load', checkFade);
+  </script>
+</body>
+</html>
